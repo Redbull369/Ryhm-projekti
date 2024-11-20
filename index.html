@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <p>Projektin html-tiedosto on tämä</p>
-</body>
+
+    <!-- Tästä alkaa Roopen Yhteystiedo osio-->
+
+    <section id="ota-yhteytta">
+      <h2>Ota yhteyttä</h2>
+      <form action="#" method="post">
+        <label for="nimi">Nimesi:</label>
+        <input type="text" id="nimi" name="nimi" required />
+
+        <label for="sahkoposti">Sähköpostiosoitteesi:</label>
+        <input type="email" id="sahkoposti" name="sahkoposti" required />
+
+        <label for="viesti">Viestisi:</label>
+        <textarea id="viesti" name="viesti" rows="4" required></textarea>
+
+        <button type="submit">Lähetä</button>
+      </form>
+    </section>
+    </section>
+  </body>
 </html>
