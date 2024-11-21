@@ -1,0 +1,55 @@
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero-kuva {
+  background-image: url("landscape.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000000, -1px -1px 2px #000000, 1px -1px 2px #000000,
+    -1px 1px 2px #000000;
+}
+
+.bg-teksti {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  border-radius: 15px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 33%;
+  padding: 1%;
+  height: 50%;
+  border-radius: 15%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
