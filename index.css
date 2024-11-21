@@ -2,4 +2,16 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
+  color: #f78fb3;
+}
+
+body {
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* Käyttää koko näytön leveyden */
+  }
 }

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="referenssi.js" defer></script>
     <link rel="stylesheet" href="referenssi.css">
-    <title>fysioterapeutti</title>
+    <title>Liikunta ja hyvinvointi matkat ulkomaille</title>
     <link rel="stylesheet" href="yhteystieto.css"/>
     <link rel="stylesheet" href="index.css"/>
     <head>
@@ -20,16 +20,17 @@
         <a href="#palvelusta">Palvelusta</a>
         <a href="#kartta">Karttatoiminto</a>
         <a href="#reference">Referenssit</a>
-        <a href="#ota-yhteytta">Ota-yhteyttä</a>
+        <a href="#ota-yhteytta">Haluan Lisätietoa</a>
     </div>
 
+    <main>
 <!--Tähän tulee danielin Hero-osio-->
 
       <!--Tähän tulee danielin palvelusta osio-->
 
       <!--tähän tulee Roopen karttatoiminto osio-->
 
-    <main>
+    
         <!-- Tästä alkaa Ollin Referenssit osio-->
         <div class="references-container">
             <h2>Referenssit tyytyväisiltä asiakkailta</h2>
@@ -45,21 +46,30 @@
       
         <!-- Tästä alkaa Roopen Yhteystiedo osio-->
     
-        <section id="ota-yhteytta">
+        <section id="ota-yhteytta" style="display: flex; justify-content: space-between;">
+          <div id="Lomake">
           <h2>Ota yhteyttä</h2>
           <form action="#" method="post">
             <label for="nimi">Nimesi:</label>
             <input type="text" id="nimi" name="nimi" required />
     
             <label for="sahkoposti">Sähköpostiosoitteesi:</label>
-            <input type="email" id="sahkoposti" name="sahkoposti" required />
+            <input type="email" id="sahkoposti" name="sahkoposti" required placeholder="AkuAnkka@gmail.com" />
     
+            <label for="puhelinnumero">Puhelinnumerosi:</label>
+            <input type="tel" id="puhelinnumero" name="puhelinnumero" required placeholder="+358 50 1234567" />
+
+
             <label for="viesti">Viestisi:</label>
             <textarea id="viesti" name="viesti" rows="4" required></textarea>
     
             <button type="submit">Lähetä</button>
           </form>
-        </section>
+        </div>
+          <div id="Sivuosa">
+            <h2>jotai</h2>
+            <p>Ota yhteyttä jos on kysyttävää. Vastaamme mielellä kaikkiin kysymyksiin.</p>
+          </div>
         </section>
       </body>
     

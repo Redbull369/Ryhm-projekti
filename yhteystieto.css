@@ -1,20 +1,26 @@
 .ota-yhteytta {
-  margin-top: 50px;
-  max-width: 400px; /* Rajoittaa lomakkeen leveyden */
-  margin: 0 auto; /* Keskittää lomakkeen sivulle */
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 #ota-yhteytta input,
 #ota-yhteytta textarea {
-  display: block; /* Varmistaa, että kentät menevät päällekkäin */
-  width: 100%; /* Kentät vievät koko saatavilla olevan leveyden */
+  display: block;
+  width: 250%;
   padding: 8px;
   margin-top: 5px;
-  margin-bottom: 15px; /* Väli kenttien väliin */
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+#lomake {
+  width: 60%;
+  margin-right: 60px;
 }
 
 button {
@@ -27,4 +33,9 @@ button {
   cursor: pointer;
   align-self: start;
   margin-top: 30px;
+}
+
+#sivuosa {
+  width: 35%;
+  text-align: right;
 }
