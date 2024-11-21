@@ -1,0 +1,60 @@
+.references-container {
+    text-align: center; /* Centers the title and the reference box */
+    font-family: Arial, sans-serif; /* Optional: A clean, modern font */
+    background-color: #A8E6CF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.references-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Adds spacing between the title and the box */
+    color: #333; /* A darker shade for readability */
+}
+
+#reference {
+    width: 500px; /* Adjust size as needed */
+    padding: 20px;
+    margin: 0 auto; /* Centers the rectangle box */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    background-color: #f9f9f9; /* Light gray background */
+    position: relative; /* Enables positioning of child elements */
+}
+
+.reference-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    position: absolute;
+    top: 10px;/* Places it partially outside the top of the rectangle */
+    right: 10px; /* Positions it at the top-right corner */
+    border: 3px solid #fff; /* Adds a white border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth to the image */
+}
+
+.reference-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px; /* Space below the image */
+    margin-bottom: 5px; /* Slight space before the job title */
+    color: #F78FB3;
+}
+
+.reference-job {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space before the text */
+    color: #F78FB3;
+}
+
+.reference-text {
+    font-size: 16px;
+    line-height: 1.5; /* Improves readability */
+    color: #555;
+    margin: 0; /* Removes default paragraph margins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures it's vertically centered */
+}
