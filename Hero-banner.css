@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
 /* Hero-osio taustakuva */
 .hero-kuva {
-  height: 50vh; /* Voit säätää korkeutta tarpeen mukaan */
+  min-height: 50vh; /* Voit säätää korkeutta tarpeen mukaan */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* Peittää koko elementin leveys ja korkeus */
@@ -12,7 +15,7 @@
 
 /* Tekstin asettelu hero-kuvan päälle */
 .bg-teksti {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   position: absolute;
   top: 50%; /* Keskittää tekstin pystysuunnassa */
   left: 50%; /* Keskittää tekstin vaakasuunnassa */
@@ -22,8 +25,35 @@
   background-size: cover;
 }
 
+.bg-teksti h1 {
+  color: #f78fb3;
+}
+
+#linkki {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.nav-item {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: #f78fb3;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  align-self: start;
+  margin-top: 30px;
+  border-radius: 15px;
+  justify-content: center;
+}
+
 /* Palvelut-osio */
 #palvelut {
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center;
+}
+
+.palvelut-kuvat {
 }
