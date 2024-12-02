@@ -23,6 +23,7 @@
   z-index: 2; /* Teksti kuvan yläpuolella */ /* Tekstin leveys - voi säätää */
   text-align: center;
   background-size: cover;
+  font-size: large;
 }
 
 .bg-teksti h1 {
