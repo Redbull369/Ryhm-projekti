@@ -1,37 +1,26 @@
 #karttamuokkaus {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 0;
+  height: auto;
 }
 
-#karttamuokkaus > h1 {
-  margin-bottom: 10px;
+h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-#karttamuokkaus > p {
-  margin-bottom: 20px;
+p {
+  margin-bottom: 30px;
 }
 
 #map {
-  height: 500px;
-  width: 60%;
-  margin-left: 20px;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
   border: 1px solid black;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  #map {
-    height: 300px;
-  }
-}
-
-@media (max-width: 375px) {
-  #map {
-    height: 250px;
-  }
 }
