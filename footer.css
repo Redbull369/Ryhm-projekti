@@ -1,0 +1,58 @@
+#footer {
+  background-color: #a8e6cf;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+#footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.footer-contact h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  color: #555;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiivisuus: Mobiililaitteille */
+@media (max-width: 768px) {
+  #footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact {
+    max-width: 100%;
+  }
+}
