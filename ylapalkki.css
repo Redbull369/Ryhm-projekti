@@ -1,13 +1,51 @@
+.navi {
+    display: flex; 
+    align-items: center;
+    background-color: #A8E6CF;
+    padding: 10px; 
+    gap: 100px; 
+}
+
 #logo {
-    width: 250px;
+    width: 250px; 
     height: auto;
+    margin-right: 20px; 
 }
 
 .navi a {
-    color:#F78FB3;
+    color: #F78FB3;
+    text-decoration: none; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.navi a:hover {
+    color: #ff5770; 
 }
 
 .navi {
-    background-color:#A8E6CF;
-    
+    justify-content: flex-start; 
+    text-align: left;
+}
+
+
+
+
+@media (max-width: 1210px) {
+    .navi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .navi a {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
 }
