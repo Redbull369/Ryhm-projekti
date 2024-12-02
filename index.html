@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +11,15 @@
     <link rel="stylesheet" href="Hero-banner.css">
     <link rel="stylesheet" href="ylapalkki.css">
     <link rel="stylesheet" href="Palvelut.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="stylesheet" href="kartta.css">
+     <!--Tämä leaflet css jälkeen!! -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+ crossorigin=""></script>
+ <script src="kartta.js"></script>
     <head>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
@@ -22,7 +28,7 @@
     <div class="navi">
       <img src="AnneSetalaLogo.jpg" id="logo">
         <a href="#palvelusta">Palvelusta</a>
-        <a href="#kartta">Karttatoiminto</a>
+        <a href="#map">Karttatoiminto</a>
         <a href="#reference">Referenssit</a>
         <a href="#ota-yhteytta">Yhteydenotto</a>
     </div>
@@ -54,7 +60,13 @@
   </div>
 </section>
       <!--tähän tulee Roopen karttatoiminto osio-->
-
+      <div id="karttamuokkaus">
+        <div>
+          <h1>Interaktiivinen Kartta</h1>
+          <p>Zoomaamalla pois näet kaikki matkakohteemme. Klikkaamalla matkakohteita löydät tietoja niistä.</p>
+        </div>
+        <div id="map"></div>
+      </div>
     
         <!-- Tästä alkaa Ollin Referenssit osio-->
         <div class="references-container">

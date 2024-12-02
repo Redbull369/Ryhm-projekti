@@ -58,3 +58,13 @@
     justify-content: center;
     height: 100%; /* Ensures it's vertically centered */
 }
+
+@media (max-width: 580px) {
+    #reference {
+        width: 300px;
+    }
+
+    .reference-name, .reference-job {
+        text-align: left;
+    }
+}

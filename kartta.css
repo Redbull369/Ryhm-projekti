@@ -1,0 +1,37 @@
+#karttamuokkaus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#karttamuokkaus > h1 {
+  margin-bottom: 10px;
+}
+
+#karttamuokkaus > p {
+  margin-bottom: 20px;
+}
+
+#map {
+  height: 500px;
+  width: 60%;
+  margin-left: 20px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  #map {
+    height: 250px;
+  }
+}
