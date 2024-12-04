@@ -3,21 +3,16 @@
   min-height: 50vh; /* Voit säätää korkeutta tarpeen mukaan */
   background-position: center center; /* Keskittää kuvan vaakasuunnassa ja pystysuunnassa */
   background-repeat: no-repeat;
-  background-size: contain; /* Kuvan säilyttäminen skaalautuvana ja keskellä */
-  position: relative;
+  background-size: cover; /* Kuvan säilyttäminen skaalautuvana ja keskellä */
   width: 100%; /* Varmistaa, että elementti peittää koko vaakasuoran tilan */
   margin: 0; /* Poistaa mahdolliset marginaalit */
-  padding: 0;
-  height: 10px;
+  padding: 50px;
+  background-image: url("./assets/HeroBanner/HeroBannerKuvia/KuvaGarda_2.JPG");
 }
 
 /* Tekstin asettelu hero-kuvan päälle */
 .bg-teksti {
-  color: #ffffff;
-  position: absolute;
-  top: 50%; /* Keskittää tekstin pystysuunnassa */
-  left: 50%; /* Keskittää tekstin vaakasuunnassa */
-  transform: translate(-50%, -50%); /* Täydellinen keskitys */
+  color: #333333;
   z-index: 2; /* Teksti kuvan yläpuolella */
   text-align: center;
   background-size: cover;
@@ -66,8 +61,8 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero-kuva {
-    background-size: cover; /* Suuremmalla ruudulla kuva peittää koko alueen */
+    background-image: none;
   }
 }

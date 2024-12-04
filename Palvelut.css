@@ -36,9 +36,13 @@
 }
 
 /* Responsiivisuus */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .kortti {
     width: 100%; /* Kortit vievät täyden leveyden pienillä ruuduilla */
     margin-bottom: 20px; /* Väliä pystysuunnassa */
+  }
+
+  .palvelut-kuvat {
+    flex-direction: column;
   }
 }
