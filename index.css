@@ -32,7 +32,7 @@ button {
 
 /* Palvelut-osion marginaali */
 h1 + p {
-  margin-top: 200px; /* Varmistaa, että palvelut-osio alkaa hero-osan jälkeen */
+  font-size: larger;
 }
 
 @media screen and (max-width: 800px) {

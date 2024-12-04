@@ -1,37 +1,43 @@
-/* Palvelut-osion otsikko ja teksti */
-h1 {
-  margin-top: 100px; /* Lisää väli hero-bannerin ja palvelut-otsikon väliin */
-  text-align: center;
-  font-size: 2.5rem;
-  color: #f78fb3;
+/* Palvelut-kuvat säilö */
+.palvelut-kuvat {
+  display: flex; /* Flexbox-asettelu */
+  align-items: flex-start; /* Kuvien ja tekstien yläreunojen linjaus */
+  margin: 20px 0; /* Väli kuvien ja muiden osioiden välillä */
 }
 
-h1 + p {
-  margin: 20px 0; /* Tekstin ja otsikon välinen marginaali */
-  text-align: center;
+/* Kortti (kuva + teksti) */
+.kortti {
+  display: flex;
+  flex-direction: column; /* Kuva ja teksti päällekkäin */
+  width: 30%; /* Kortin leveys */
+  text-align: center; /* Sisällön keskitys */
+  background-color: #22e965; /* Kortin taustaväri */
+  border-radius: 10px; /* Pyöristetyt kulmat */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Hienovarainen varjo */
+  margin: 1%; /* Väli korttien välillä */
+  overflow: hidden; /* Estää sisällön ylivuodon */
+  padding: 10px; /* Väliä sisällön ja reunojen välillä */
+}
+
+/* Kortin kuvat */
+.kortti img {
+  width: 100%; /* Kuvan leveys täyttää kortin */
+  border-radius: 10px; /* Sama pyöristys kuin kortilla */
+  object-fit: cover; /* Estää kuvan vääristymisen */
+  aspect-ratio: 4/3; /* Suhteellinen korkeus */
+}
+
+/* Kortin teksti */
+.kortti p {
+  margin: 10px 0 0; /* Yläväli kuvasta */
   font-size: 1rem;
+  color: #333333; /* Neutraali tekstiväri */
 }
 
-/* Palvelut-kuvien tyylit */
-.avatar {
-  vertical-align: middle;
-  width: 31%;
-  height: 50%;
-  border-radius: 15%;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin-left: 2%;
-  aspect-ratio: 1;
-}
-
-.avatar:first-child {
-  margin-left: 0;
-}
-
-/* Varmista responsiivisuus */
+/* Responsiivisuus */
 @media screen and (max-width: 800px) {
-  .avatar {
-    width: 100%; /* Kuvat vievät koko näytön leveyden pienillä ruuduilla */
+  .kortti {
+    width: 100%; /* Kortit vievät täyden leveyden pienillä ruuduilla */
+    margin-bottom: 20px; /* Väliä pystysuunnassa */
   }
 }
