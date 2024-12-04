@@ -3,6 +3,7 @@
   display: flex; /* Flexbox-asettelu */
   align-items: flex-start; /* Kuvien ja tekstien yläreunojen linjaus */
   margin: 20px 0; /* Väli kuvien ja muiden osioiden välillä */
+  background-color: #a8e6cf;
 }
 
 /* Kortti (kuva + teksti) */
@@ -11,7 +12,7 @@
   flex-direction: column; /* Kuva ja teksti päällekkäin */
   width: 30%; /* Kortin leveys */
   text-align: center; /* Sisällön keskitys */
-  background-color: #22e965; /* Kortin taustaväri */
+  background-color: #ffffff; /* Kortin taustaväri */
   border-radius: 10px; /* Pyöristetyt kulmat */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Hienovarainen varjo */
   margin: 1%; /* Väli korttien välillä */

@@ -34,6 +34,24 @@
   margin-bottom: 5px;
 }
 
+.nav-link {
+  text-decoration: none; /* Poistaa alaviivan */
+  font-size: 1.2rem; /* Voit muokata fontin kokoa */
+  border-radius: 20px; /* Pyöristetyt reunat */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
+  color: white; /* Vaihtoehtoinen väri hover-tilassa */
+  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
+  color: white; /* Vaihtoehtoinen väri hover-tilassa */
+  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
+}
+
 .nav-item {
   width: 100px;
   padding: 10px;
