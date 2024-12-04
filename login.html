@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Kirjaudu sisään</title>
+</head>
+<body data-page="login">
+    <div class="container">
+        <h2>Ylläpitäjän kirjautuminen</h2>
+        <div class="form-group">
+            <label for="username">Käyttäjätunnus</label>
+            <input type="text" id="username" placeholder="admin">
+        </div>
+        <div class="form-group">
+            <label for="password">Salasana</label>
+            <input type="password" id="password" placeholder="taitaja2024">
+        </div>
+        <button id="login-button">Kirjaudu</button>
+        <p id="error-message" class="error"></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
