@@ -5,30 +5,31 @@
   gap: 30px;
   padding: 20px;
   box-sizing: border-box;
-  align-items: center;
-  text-align: center;
 }
 
 #lomake {
   flex: 1 1 45%;
   min-width: 300px;
-  max-width: 1200px;
+  max-width: 1550px;
   text-align: center;
   align-items: center;
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #lomake input,
 #lomake textarea {
-  display: block;
   width: 100%;
-  max-width: 1200px;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  align-items: center;
 }
 
 #lomake button {
