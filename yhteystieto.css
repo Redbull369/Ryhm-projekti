@@ -5,16 +5,14 @@
   gap: 30px;
   padding: 20px;
   box-sizing: border-box;
+  align-items: center;
+  text-align: center;
 }
 
 #lomake {
   flex: 1 1 45%;
   min-width: 300px;
-  max-width: 600px;
-}
-
-#lomake {
-  margin-right: 0;
+  max-width: 1200px;
 }
 
 #lomake input,
@@ -28,6 +26,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 #lomake button {

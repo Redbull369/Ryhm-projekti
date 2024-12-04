@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intranet</title>
+    <link rel="stylesheet" href="intranet.css" />
+  </head>
+  <body>
+    <h1>Intranet: Hallitse Liikuntamatkoja</h1>
+    <form id="add-trip-form">
+      <input type="text" id="title" placeholder="Otsikko" required />
+      <input type="text" id="location" placeholder="Sijainti" required />
+      <input type="text" id="lat" placeholder="Latitude (Lat)" required />
+      <input type="text" id="lng" placeholder="Longitude (Lng)" required />
+      <textarea id="description" placeholder="Kuvausteksti"></textarea>
+      <input type="date" id="date" required />
+      <input type="text" id="image" placeholder="Kuvan URL" />
+      <input type="text" id="pdf" placeholder="PDF:n URL" />
+      <button type="submit">Lisää matka</button>
+    </form>
+
+    <h2>Lisätyt matkat</h2>
+    <table id="trip-table">
+      <thead>
+        <tr>
+          <th>Otsikko</th>
+          <th>Sijainti</th>
+          <th>Päivämäärä</th>
+          <th>Toiminnot</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="intranet.js"></script>
+  </body>
+</html>
