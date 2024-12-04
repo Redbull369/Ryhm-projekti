@@ -1,11 +1,9 @@
-// Tallenna ja lataa tiedot localStoragesta
 const tripsKey = "trips"; // Avain localStoragessa
 
-// Lataa matkat
 function loadTrips() {
   const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
   const tableBody = document.querySelector("#trip-table tbody");
-  tableBody.innerHTML = ""; // Tyhjennä vanhat rivit
+  tableBody.innerHTML = "";
 
   trips.forEach((trip, index) => {
     const row = document.createElement("tr");
@@ -22,7 +20,6 @@ function loadTrips() {
   });
 }
 
-// Lisää uusi matka
 document.querySelector("#add-trip-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -41,10 +38,10 @@ document.querySelector("#add-trip-form").addEventListener("submit", (e) => {
   trips.push(newTrip);
   localStorage.setItem(tripsKey, JSON.stringify(trips));
   loadTrips();
-  e.target.reset(); // Tyhjennä lomake
+  e.target.reset();
 });
 
-// Poista matka
+// Tämän ehkä pitäisi poistaa matka?
 function deleteTrip(index) {
   const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
   trips.splice(index, 1);
@@ -52,10 +49,8 @@ function deleteTrip(index) {
   loadTrips();
 }
 
-// Muokkaa matkaa (lisää haluamasi logiikka)
 function editTrip(index) {
-  alert("Muokkaustoiminto on työn alla!"); // Placeholder
+  alert("Muokkaustoiminto on työn alla!");
 }
 
-// Alusta
 loadTrips();

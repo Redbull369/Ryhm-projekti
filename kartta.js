@@ -84,5 +84,18 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
     marker.bindPopup(popupContent);
+
+    // tämän pitäisi löytää matkat localstoragesta?
+    const trips = JSON.parse(localStorage.getItem("trips")) || [];
+    trips.forEach((trip) => {
+      const marker = L.marker([trip.lat, trip.lng]).addTo(map);
+      marker.bindPopup(`
+        <h3>${trip.title}</h3>
+        <p>${trip.description}</p>
+        <p><strong>Päivämäärä:</strong> ${trip.date}</p>
+        <img src="${trip.image}" alt="${trip.title}" style="width:100%; max-height:150px;">
+        <a href="${trip.pdf}" target="_blank">Lue lisää (PDF)</a>
+      `);
+    });
   });
 });
