@@ -1,16 +1,14 @@
-* {
-  box-sizing: border-box;
-}
 /* Hero-osio taustakuva */
 .hero-kuva {
   min-height: 50vh; /* Voit säätää korkeutta tarpeen mukaan */
-  background-position: center;
+  background-position: center center; /* Keskittää kuvan vaakasuunnassa ja pystysuunnassa */
   background-repeat: no-repeat;
-  background-size: cover; /* Peittää koko elementin leveys ja korkeus */
+  background-size: contain; /* Kuvan säilyttäminen skaalautuvana ja keskellä */
   position: relative;
   width: 100%; /* Varmistaa, että elementti peittää koko vaakasuoran tilan */
   margin: 0; /* Poistaa mahdolliset marginaalit */
   padding: 0;
+  height: 10px;
 }
 
 /* Tekstin asettelu hero-kuvan päälle */
@@ -20,7 +18,7 @@
   top: 50%; /* Keskittää tekstin pystysuunnassa */
   left: 50%; /* Keskittää tekstin vaakasuunnassa */
   transform: translate(-50%, -50%); /* Täydellinen keskitys */
-  z-index: 2; /* Teksti kuvan yläpuolella */ /* Tekstin leveys - voi säätää */
+  z-index: 2; /* Teksti kuvan yläpuolella */
   text-align: center;
   background-size: cover;
   font-size: large;
@@ -34,6 +32,24 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
+}
+
+.nav-link {
+  text-decoration: none; /* Poistaa alaviivan */
+  font-size: 1.2rem; /* Voit muokata fontin kokoa */
+  border-radius: 20px; /* Pyöristetyt reunat */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
+  color: white; /* Vaihtoehtoinen väri hover-tilassa */
+  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
+  color: white; /* Vaihtoehtoinen väri hover-tilassa */
+  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
 }
 
 .nav-item {
@@ -50,11 +66,8 @@
   justify-content: center;
 }
 
-/* Palvelut-osio */
-#palvelut {
-  margin: 30px auto;
-  text-align: center;
-}
-
-.palvelut-kuvat {
+@media (max-width: 768px) {
+  .hero-kuva {
+    background-size: cover; /* Suuremmalla ruudulla kuva peittää koko alueen */
+  }
 }
