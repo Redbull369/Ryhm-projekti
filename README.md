@@ -2,9 +2,6 @@
 tehtävän anto lyhyesti: 
 Toteutettiin annettujen ohjeiden mukaisesti itsenäinensivusto, joka sopisi nykyisille www.annes.fi sivulle. Projektissa toteutimme interaktiivisen kartan, sekä kirjautumisen intranettiin jossa käyttäjä voi hallita, 
 muokata ja poistaa matkakohteita.
-
-
-### Viittaus Taitajatehtävään: 
 Tehtävä on muokattu Taitaja 2022 -kilpailutehtävästä.
 
 ### Projektissa käytetyt teknologiat:
