@@ -12,7 +12,7 @@
 
 /* Tekstin asettelu hero-kuvan päälle */
 .bg-teksti {
-  color: #333333;
+  color: white;
   z-index: 2; /* Teksti kuvan yläpuolella */
   text-align: center;
   background-size: cover;
@@ -64,5 +64,10 @@
 @media screen and (max-width: 768px) {
   .hero-kuva {
     background-image: none;
+    color: #333333;
+  }
+
+  .bg-teksti {
+    color: #333333;
   }
 }
