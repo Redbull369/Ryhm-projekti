@@ -1,19 +1,17 @@
-/* Hero-osio taustakuva */
 .hero-kuva {
-  min-height: 50vh; /* Voit säätää korkeutta tarpeen mukaan */
-  background-position: center center; /* Keskittää kuvan vaakasuunnassa ja pystysuunnassa */
+  min-height: 50vh;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; /* Kuvan säilyttäminen skaalautuvana ja keskellä */
-  width: 100%; /* Varmistaa, että elementti peittää koko vaakasuoran tilan */
-  margin: 0; /* Poistaa mahdolliset marginaalit */
+  background-size: cover;
+  width: 100%;
+  margin: 0;
   padding: 50px;
   background-image: url("./assets/HeroBanner/HeroBannerKuvia/KuvaGarda_2.JPG");
 }
 
-/* Tekstin asettelu hero-kuvan päälle */
 .bg-teksti {
   color: white;
-  z-index: 2; /* Teksti kuvan yläpuolella */
+  z-index: 2;
   text-align: center;
   background-size: cover;
   font-size: large;
@@ -30,21 +28,21 @@
 }
 
 .nav-link {
-  text-decoration: none; /* Poistaa alaviivan */
-  font-size: 1.2rem; /* Voit muokata fontin kokoa */
-  border-radius: 20px; /* Pyöristetyt reunat */
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }
 
 .nav-link:hover {
-  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
-  color: white; /* Vaihtoehtoinen väri hover-tilassa */
-  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
+  text-decoration: none;
+  color: white;
+  background-color: #d6769b;
 }
 
 .nav-link:hover {
-  text-decoration: none; /* Varmistaa, ettei alaviivaa näy hover-tilassa */
-  color: white; /* Vaihtoehtoinen väri hover-tilassa */
-  background-color: #d6769b; /* Vaihtoehtoinen taustaväri hover-tilassa */
+  text-decoration: none;
+  color: white;
+  background-color: #d6769b;
 }
 
 .nav-item {

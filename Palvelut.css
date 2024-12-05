@@ -1,45 +1,45 @@
 /* Palvelut-kuvat säilö */
 .palvelut-kuvat {
-  display: flex; /* Flexbox-asettelu */
-  align-items: flex-start; /* Kuvien ja tekstien yläreunojen linjaus */
-  margin: 20px 0; /* Väli kuvien ja muiden osioiden välillä */
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
   background-color: #a8e6cf;
 }
 
 /* Kortti (kuva + teksti) */
 .kortti {
   display: flex;
-  flex-direction: column; /* Kuva ja teksti päällekkäin */
-  width: 30%; /* Kortin leveys */
-  text-align: center; /* Sisällön keskitys */
-  background-color: #ffffff; /* Kortin taustaväri */
-  border-radius: 10px; /* Pyöristetyt kulmat */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Hienovarainen varjo */
-  margin: 1%; /* Väli korttien välillä */
-  overflow: hidden; /* Estää sisällön ylivuodon */
-  padding: 10px; /* Väliä sisällön ja reunojen välillä */
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1%;
+  overflow: hidden;
+  padding: 10px;
 }
 
 /* Kortin kuvat */
 .kortti img {
-  width: 100%; /* Kuvan leveys täyttää kortin */
-  border-radius: 10px; /* Sama pyöristys kuin kortilla */
-  object-fit: cover; /* Estää kuvan vääristymisen */
-  aspect-ratio: 4/3; /* Suhteellinen korkeus */
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 /* Kortin teksti */
 .kortti p {
-  margin: 10px 0 0; /* Yläväli kuvasta */
+  margin: 10px 0 0;
   font-size: 1rem;
-  color: #333333; /* Neutraali tekstiväri */
+  color: #333333;
 }
 
 /* Responsiivisuus */
 @media screen and (max-width: 768px) {
   .kortti {
-    width: 100%; /* Kortit vievät täyden leveyden pienillä ruuduilla */
-    margin-bottom: 20px; /* Väliä pystysuunnassa */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .palvelut-kuvat {

@@ -1,4 +1,5 @@
 const tripsKey = "trips"; // Avain localStoragessa
+let editIndex = null;
 
 function loadTrips() {
   const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
@@ -23,6 +24,8 @@ function loadTrips() {
 document.querySelector("#add-trip-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
+
   const newTrip = {
     title: document.querySelector("#title").value,
     location: document.querySelector("#location").value,
@@ -34,14 +37,18 @@ document.querySelector("#add-trip-form").addEventListener("submit", (e) => {
     pdf: document.querySelector("#pdf").value,
   };
 
-  const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
-  trips.push(newTrip);
+  if (editIndex !== null) {
+    trips[editIndex] = newTrip;
+    editIndex = null;
+  } else {
+    trips.push(newTrip);
+  }
+
   localStorage.setItem(tripsKey, JSON.stringify(trips));
   loadTrips();
   e.target.reset();
 });
 
-// Tämän ehkä pitäisi poistaa matka?
 function deleteTrip(index) {
   const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
   trips.splice(index, 1);
@@ -50,7 +57,21 @@ function deleteTrip(index) {
 }
 
 function editTrip(index) {
-  alert("Muokkaustoiminto on työn alla!");
+  const trips = JSON.parse(localStorage.getItem(tripsKey)) || [];
+  const trip = trips[index];
+
+  document.querySelector("#title").value = trip.title;
+  document.querySelector("#location").value = trip.location;
+  document.querySelector("#lat").value = trip.lat;
+  document.querySelector("#lng").value = trip.lng;
+  document.querySelector("#description").value = trip.description;
+  document.querySelector("#date").value = trip.date;
+  document.querySelector("#image").value = trip.image;
+  document.querySelector("#pdf").value = trip.pdf;
+
+  editIndex = index;
+
+  document.querySelector("#add-trip-form").scrollIntoView();
 }
 
 loadTrips();
